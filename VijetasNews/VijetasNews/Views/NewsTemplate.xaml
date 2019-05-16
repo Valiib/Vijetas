@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VijetasNews.Views.NewsTemplate">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Padding="30">
+            <StackLayout HeightRequest="40" VerticalOptions="End">
+                <ActivityIndicator 
+                           x:Name="Loading"
+                        IsRunning="True"
+                         IsVisible="True"
+                          HeightRequest="40"
+                          VerticalOptions="CenterAndExpand"
+                          HorizontalOptions="CenterAndExpand">
+              
+        
+                </ActivityIndicator>
+
+                
+                
+                
+            </StackLayout>
+                <Frame Margin="-30,-80,-30,5" CornerRadius="0" WidthRequest="100" HeightRequest="200" Padding="0" HorizontalOptions="FillAndExpand" 
+                                     VerticalOptions="Fill"  >
+
+                    <Image x:Name="Mainimage" HorizontalOptions="FillAndExpand" VerticalOptions="Fill"   Aspect="AspectFill" />
+                </Frame >
+                <Label Text="{Binding Title}" FontSize="Large" Parent="10,0,10,20"/>
+            <Label Text="{Binding Paragraphs}"/>
+            <Button Text="Share" Padding="0,0,300,0" />
+
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

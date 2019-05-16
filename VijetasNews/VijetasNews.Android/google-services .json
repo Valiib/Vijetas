@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "526990693605",
+    "firebase_url": "https://vijetasnews.firebaseio.com",
+    "project_id": "vijetasnews",
+    "storage_bucket": "vijetasnews.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526990693605:android:54d49c714937c256",
+        "android_client_info": {
+          "package_name": "com.companyname.VijetasNews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526990693605-ijuts19og1k3smldbgr31r4thprunq0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlxiOhqZGyBWzkrBYUu7GoqpssLfyqFcA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526990693605-ijuts19og1k3smldbgr31r4thprunq0u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

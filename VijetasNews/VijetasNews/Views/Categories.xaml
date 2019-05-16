@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:customControls="clr-namespace:VijetasNews.CustomRender"
+             x:Class="VijetasNews.Views.Categories"
+             Title="Category">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <ListView
+             
+             x:Name="Category"
+             x:Uid="{Binding PostId}"
+             IsPullToRefreshEnabled="False" 
+             ItemsSource="{Binding CategoryViewModels}"
+             HasUnevenRows="True"
+             SeparatorVisibility="None"
+             ItemTapped="Category_itemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <customControls:ExtendedViewCell  SelectedBackgroundColor="#303030">
+                            <ViewCell.View>
+                                <Grid BackgroundColor="#FAFAFA" Padding="10" RowSpacing="10" ColumnSpacing="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                            
+
+                                    <Label Grid.Row="0"
+                                           HorizontalOptions="Center"
+                                            Text="{Binding CategoryType}"
+                                           FontSize="Large"
+                                            VerticalOptions="End"/>
+                       
+                                    <Frame Margin="7,0,7,0" Grid.Row="1"  CornerRadius="10" WidthRequest="100" HeightRequest="200" HorizontalOptions="FillAndExpand" 
+                                     VerticalOptions="FillAndExpand" Padding="0">
+                                        <Image Source="{Binding UrlImage}" Aspect="AspectFill" />
+                                    </Frame>
+
+                                   
+
+                                </Grid>
+                            </ViewCell.View>
+                        </customControls:ExtendedViewCell>
+                        <!-- <ViewCell Text="" TextColor="Black"/>-->
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

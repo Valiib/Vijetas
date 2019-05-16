@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VijetasNews.Views.FirstTimer">
+    <ContentPage.Content>
+        <StackLayout Padding="20,40,20,40">
+            <Label Text="Wellcome"/>
+            <Entry x:Name="Name" Placeholder="Your name"/>
+            <Entry x:Name="Surname" Placeholder="Your surname"/>
+            <Button Text="Thanks" Clicked="Button_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
